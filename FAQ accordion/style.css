@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+}
+
+body {
+  background-color: hsl(275, 100%, 97%);
+  color: hsl(292, 42%, 14%);
+  position: relative;
+}
+
+.app-container {
+  position: relative;
+  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.app-container>img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.faq {
+  position: relative;
+  max-width: 600px;
+  width: 100%;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  margin: 4rem auto;
+  margin-top: -100px;
+  z-index: 100;
+}
+
+.faq-header {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 16px;
+}
+
+.faq-header img {
+  width: 35px;
+}
+
+.faq-header .faq-title {
+  font-size: 46px;
+}
+
+.faq-question,
+.faq-answer {
+  padding-top: 12px;
+  padding-bottom: 18px;
+}
+
+.faq-content .faq-question {
+  font-weight: 600;
+}
+
+.faq-answer {
+  display: none;
+}
+
+hr {
+  border: 1px solid hsl(270deg 100% 98.32%);
+}
+
+.faq-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.faq-item-header img {
+  width: 30px;
+  cursor: pointer;
+}
+
+.faq-answer.active {
+  display: block;
+}
+
+@media (max-width: 991px) {
+  .app-container {
+    margin-bottom: 0;
+  }
+
+  .faq {
+    margin-top: -4rem;
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 768px) {
+
+    .app-container{
+        justify-content: center;
+        align-items: center;
+    }
+    .faq{
+        max-width: 500px;
+        margin-inline:20px;
+    }
+
+    .faq-question, .faq-answer {
+       font-size: 14px;
+    }
+}
+
+@media (max-width: 554px) {
+
+    .faq-item-header {
+
+        gap: 10px;
+    }
+    .faq-header .faq-title {
+        font-size: 36px;
+    }
+
+
+    .faq{
+        max-width: 300px;
+        padding-inline: 16px;
+    }
+}
+
