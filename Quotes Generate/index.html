@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Generate Quotes</title>
+    <style>
+      body {
+        font-family: 'Arial', sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+        color: #333;
+      }
+
+      button {
+        background-color: #ff6b6b;
+        border: none;
+        padding: 12px 24px;
+        border-radius: 8px;
+        font-size: 16px;
+        color: white;
+        cursor: pointer;
+        transition: transform 0.2s, background-color 0.3s;
+        margin-bottom: 20px;
+      }
+
+      button:hover {
+        background-color: #ff4757;
+        transform: scale(1.05);
+      }
+
+      p {
+        font-size: 1.2rem;
+        max-width: 600px;
+        line-height: 1.5;
+        background: rgba(255, 255, 255, 0.7);
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <button onclick="fetchData()">Generate</button>
+    <div></div>
+  </body>
+</html>
